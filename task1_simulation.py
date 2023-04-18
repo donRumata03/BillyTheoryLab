@@ -74,10 +74,10 @@ def test_dependency():
 
     # Fit a linear regression model to the data
     model = LinearRegression()
-    model.fit(np.log(ns).reshape(-1, 1), iterations_needed)
+    model.fit(np.log2(ns).reshape(-1, 1), iterations_needed)
 
     # Predict values using the model
-    y_pred = model.predict(np.log(ns).reshape(-1, 1))
+    y_pred = model.predict(np.log2(ns).reshape(-1, 1))
     print(f'Linear regression: y = {model.coef_[0]} * x + {model.intercept_}')
 
     plt.plot(ns, iterations_needed)
