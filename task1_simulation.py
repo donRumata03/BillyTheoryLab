@@ -78,6 +78,7 @@ def test_dependency():
 
     # Predict values using the model
     y_pred = model.predict(np.log(ns).reshape(-1, 1))
+    print(f'Linear regression: y = {model.coef_[0]} * x + {model.intercept_}')
 
     plt.plot(ns, iterations_needed)
     plt.plot(ns, y_pred)
@@ -91,3 +92,4 @@ def test_dependency():
 
 if __name__ == '__main__':
     test_dependency()
+    # run_simulation()
