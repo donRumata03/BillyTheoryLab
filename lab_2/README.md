@@ -5,7 +5,7 @@
 | Вариант       | 2         | 1         | 2         | 2         |
 
 
-Теоретическая часть: в [PDF](.pdf) + симуляции в файлах [task3_simulation.py](task3_simulation.py) и [task4_simulation.py](task4_simulation.py) + ссылки на «ресурсы» в README.
+Теоретическая часть: в [PDF](Теоретическая_часть_лабораторной_2.pdf) + симуляции в файлах [task3_simulation.py](task3_simulation.py) и [task4_simulation.py](task4_simulation.py) + ссылки на «ресурсы» в README.
 
 # Задача 1
 
