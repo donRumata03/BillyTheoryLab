@@ -55,7 +55,7 @@ def measure_time(f):
     return time.time() - start
 
 def measure(samples, generator):
-    measurements = 1000_000
+    measurements = 10_000
     times = int(measurements / samples)
     average = measure_time(lambda: [generator(samples) for _ in range(times)]) / times
     print(f"Average of {average} seconds at {samples} samples")
@@ -66,12 +66,12 @@ if __name__ == '__main__':
     # print(generate_inverse(10))
     # print(generate_rejection(10)) # Use scipy's rejection sampling method (as suggested in the statement)
 
-    for s in [100, 1000, 10000, 100000]:
+    for s in [1000, 5000, 10000]:
         print("Inverse:")
         measure(samples=s, generator=generate_inverse)
 
         print("Derived:")
-        measure(samples=s, generator=generate_inverse)
+        measure(samples=s, generator=generate_derived)
 
         print("Rejecting:")
         measure(samples=s, generator=generate_rejection)

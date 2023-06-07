@@ -23,6 +23,30 @@
 
 Подробнее про метод: [здесь](https://en.wikipedia.org/wiki/Rejection_sampling) и [здесь](https://bookdown.org/rdpeng/advstatcomp/rejection-sampling.html)
 
+→ Получается, что стандартный способ — самый удобный, но самый медленный:
+
+Для 1000 сэмплов:
+```
+Inverse:
+Average of 0.002500581741333008 seconds at 1000 samples
+Derived:
+Average of 1.4032428741455079 seconds at 1000 samples
+Rejecting:
+Average of 0.007001566886901856 seconds at 1000 samples
+```
+
+Для 10_000 сэмплов:
+```
+Inverse:
+Average of 0.021004915237426758 seconds at 10000 samples
+Derived:
+Average of 13.96620488166809 seconds at 10000 samples
+Rejecting:
+Average of 0.011002302169799805 seconds at 10000 samples
+```
+
+(Заметим, что с inverse function питоновский метод соревнуется с сишным методом rejection sampling на равных — там, фактически, основное время — на работу с массивом)
+
 # Задача 4
 
 Вычисление в Wolfram: https://www.wolframalpha.com/input?i=Erfc%5B%28x%29%2F%28Sqrt%5B2%5D%29%5D%2F2+%3C%3D+0.05%2F2
