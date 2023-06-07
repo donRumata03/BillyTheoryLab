@@ -8,7 +8,7 @@ from scipy.stats.sampling import TransformedDensityRejection
 
 
 def pdf(x):
-    return 5 * x ** 4 / (2 * math.pi) ** 0.5 * math.exp(-(5 - x ** 2) ** 2 / 2)
+    return 5 * x ** 4 / (2 * math.pi) ** 0.5 * math.exp(-(5 - x ** 5) ** 2 / 2)
 
 
 def dpdf(x):
@@ -47,7 +47,7 @@ def generate_rejection(samples):
 
     urng = np.random.default_rng()
     rng = TransformedDensityRejection(dist, domain=dist.support(), random_state=urng)
-    print(rng.rvs(1000))
+    return rng.rvs(samples)
 
 def measure_time(f):
     start = time.time()
