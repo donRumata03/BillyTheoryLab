@@ -1,3 +1,12 @@
+Таблица с вариантами заданий у меня:
+
+|  | Задание 1 | Задание 2 | Задание 3 | Задание 4 |
+|---------|-----------|-----------|-----------|-----------|
+| Вариант       | 2         | 1         | 2         | 2         |
+
+
+Теоретическая часть: в [PDF](.pdf) + симуляции в файлах [task3_simulation.py](task3_simulation.py) и [task4_simulation.py](task4_simulation.py) + ссылки на «ресурсы» в README.
+
 # Задача 1
 
 Всё в теоретическом обосновании.
@@ -11,6 +20,8 @@
 # Задача 3
 
 Вычисление интеграла в Wolfram: https://www.wolframalpha.com/input?i2d=true&i=Integrate%5B5Divide%5BPower%5Bx%2C4%5D%2Csqrt%5C%2840%292+pi%5C%2841%29%5D+Power%5Be%2C-Divide%5BPower%5B%5C%2840%295-Power%5Bx%2C5%5D%5C%2841%29%2C2%5D%2C2%5D%5D%2C%7Bx%2C-%E2%88%9E%2Cx%7D%5D
+
+Подробнее про метод: [здесь](https://en.wikipedia.org/wiki/Rejection_sampling) и [здесь](https://bookdown.org/rdpeng/advstatcomp/rejection-sampling.html)
 
 # Задача 4
 
